@@ -26,7 +26,7 @@
             <a href="mes_projets.php">Mes projets</a>
           </li>
           <li class="header__menu-item">
-            <a href="monCV.php">CV</a>
+            <a href="monCV.php">mon CV</a>
           </li>
         </ul>
       </nav>
@@ -34,4 +34,3 @@
     </div>
   </header>
 
-  <?php include 'footer.php' ?>

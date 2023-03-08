@@ -3,91 +3,57 @@
 }
 
 
-/* :root {
-  --main-width: 700px;
-  --title-font: 'Tilt_Neon';
-  --highlight--color: #Ff00f8;
-} */
-
-
 body {
-  font-family: 'Tilt_Neon';
+  min-height: 100vh;
   background-color: #F2F3F5;
   font-size: 16px;
 }
 
 .header {
+  padding: 30px 100px 0px 100px;
   background-color: #E2cdf1;
-  padding-bottom: 50px;
   color: black;
   text-align: center;
 }
 
-.header__container {
-  max-width: var(--main-width);
-  margin: auto;
-}
 
 .header__title {
   font-size: 3rem;
-  /* padding: 30px 0 30px 10px; */
   font-family: 'Tilt_Neon';
-  color: white;
+  color: black;
   text-shadow: 0 0 20px #Ff00f8;
+  border: solid 3px black;
+  padding: 0 0 0 0;
+
 }
 
-@media (min-width: 700px) {
-  .header__title {
-    padding: 30px 0;
-  }
-}
 
 .header__menu-container {
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: space-around;
-  --main-width: 700px;
-  --highlight--color: #Ff00f8; */
-
-  --main-width: 700px;
-  --title-font: 'Tilt_Neon';
+  flex-direction: row; 
+  --main-width: 700px; 
   --highlight--color: #Ff00f8;
 }
 
-@media (min-width: 300px) {
-  .header__menu-container {
-    flex-direction: row;
-  }
-}
 
 .header__menu-item {
+  font-size: 1.2em;
   flex-grow: 1;
-  font-family: var(--title-font);
+  font-family: 'Tilt_Neon';
   text-align: center;
   text-transform: uppercase;
-  padding: 10px 0;
-  font-size: 0.8rem;
-  transition: 0.3s;
+  padding: 10px;
+  transition: 0.5s;
   border-bottom: solid 3px transparent;
 }
 
-@media (min-width: 300px) {
-  .header__menu-item {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 500px) {
-  .header__menu-item {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-}
 
 .header__menu-item:hover {
-  background-color: rgba(100, 100, 100, 0.3);
+
   border-bottom: solid 3px var(--highlight--color);
+  color: black;
+  text-shadow: 0 0 20px #Ff00f8;
+  transition: 0.8s;
 }
 
 .header__menu-item--active {
@@ -113,20 +79,20 @@ body {
   margin: 15px 0;
 }
 
-
-@media (min-width: 500px) {
-  .prices__lists {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
-footer {
-  display: flex;
-  align-items: flex-end;
-  font-size: 5em;
+.projets {
+padding-top: 20px;
 }
 
 section {
   padding-bottom: 20px;
+}
+
+
+.footer {
+  position: sticky;
+  top: 100%;
+  background-color: #E2cdf1;
+  padding-bottom: 50px;
+  color: black;
+  text-align: center;
 }

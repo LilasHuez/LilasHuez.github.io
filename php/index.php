@@ -2,3 +2,9 @@
 
 
 
+
+
+
+
+<?php include 'footer.php' ?> 
+
