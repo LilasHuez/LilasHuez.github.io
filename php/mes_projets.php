@@ -6,6 +6,8 @@
     <h1 class="projets">Convertisseur de Simflouz en Euros</h1>
     
    <?php 
+$amount= 'amount'; 
+
     function getAmountInEuros($amount)
 {
     $conversionRate = 161.62;
@@ -22,15 +24,18 @@
 <form action="" method="POST">
 
         <div>Montant en §: <input type="number" name="amount" id=""> <input type="submit" name="submit" ></div> 
-        <div>Montant en €: <output type= "number" name="result" id=""></div>
+        <!-- <div>Montant en €: <output type= "number" name="result" id=""></div> -->
         
     </form>
 
  <?php
+
+
+
 if (isset($_POST ['amount'])) {
     $amount = $_POST['amount'];
 }
-echo $amount . ' §. <br>';
+// echo $amount . ' §. <br>';
 echo getAmountInEuros($amount). ' €. ';
 
 ?> 
