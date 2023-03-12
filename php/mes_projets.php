@@ -6,13 +6,12 @@
     <h1 class="projets">Convertisseur de Simflouz en Euros</h1>
     
    <?php 
-$amount= 'amount'; 
+
 
     function getAmountInEuros($amount)
 {
-    $conversionRate = 161.62;
     
-    $amountInEuros = $amount * $conversionRate;
+    $amountInEuros = $amount * 161.62;
     // var_dump($amountInDollars);
 
     // echo $amountInSimoleons . ' § ';

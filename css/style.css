@@ -1,7 +1,10 @@
-@font-face { font-family: 'Tilt_Neon'; 
+@font-face { 
+  font-family: 'Tilt_Neon'; 
   src: url('../fonts/Tilt_Neon/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf');
-}
 
+  font-family: 'Neonder'; 
+  src: url('../fonts/Neonderthaw/Neonderthaw-Regular.ttf');
+}
 
 body {
   min-height: 100vh;
@@ -22,8 +25,8 @@ body {
   font-family: 'Tilt_Neon';
   color: black;
   text-shadow: 0 0 20px #Ff00f8;
-  border: solid 3px black;
-  padding: 0 0 0 0;
+  /* border: solid 3px black; */
+  
 
 }
 
