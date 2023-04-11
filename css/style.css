@@ -1,14 +1,27 @@
 @font-face { 
   font-family: 'Tilt_Neon'; 
   src: url('../fonts/Tilt_Neon/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf');
-
-  font-family: 'Neonder'; 
-  src: url('../fonts/Neonderthaw/Neonderthaw-Regular.ttf');
 }
+
+@font-face { 
+  font-family: 'Dancing Script'; 
+  src: url('../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf');
+} 
+
+/* @font-face { 
+  font-family: 'Neonderthaw'; 
+  src: url('../fonts/Neonderthaw/Neonderthaw-Regular.ttf');
+} 
+
+@font-face { 
+  font-family: 'Sacramento'; 
+  src: url('../fonts/Sacramento/Sacramento-Regular.ttf');
+}  */
+
 
 body {
   min-height: 100vh;
-  background-color: #F2F3F5;
+  background-color: #E2cdf1;
   font-size: 16px;
 }
 
@@ -20,11 +33,14 @@ body {
 }
 
 
-.header__title {
+.page_title {
   font-size: 3rem;
-  font-family: 'Tilt_Neon';
+  font-family: 'Dancing Script';
+  font-weight: bolder;
   color: black;
-  text-shadow: 0 0 20px #Ff00f8;
+  
+
+  /* text-shadow: 0 0 20px #Ff00f8; */
   /* border: solid 3px black; */
   
 
@@ -58,29 +74,24 @@ body {
   text-shadow: 0 0 20px #Ff00f8;
   transition: 0.8s;
 }
-
+/* 
 .header__menu-item--active {
   border-bottom-color: var(--highlight--color);
-}
-
+} */
+/* 
 .header__menu-item a {
   display: block;
-}
+} */
 
 .main-container {
   max-width: var(--main-width);
-  margin: -50px auto 0;
+  /* margin: -50px auto 0;
   background-color: #FFF;
-  padding: 30px 20px;
+  padding: 30px 20px; */
+  display: flex;
+  align-items: flex-end;
 }
 
-.page__title {
-  font-family: var(--title-font);
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 15px 0;
-}
 
 .projets {
 padding-top: 20px;

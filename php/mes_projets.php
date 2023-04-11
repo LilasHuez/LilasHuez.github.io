@@ -3,44 +3,26 @@
 <html lang="en">
 
 <body>
-    <h1 class="projets">Convertisseur de Simflouz en Euros</h1>
-    
-   <?php 
+<h1 class="projets">Convertisseur de Simflouz en Euros</h1>
 
 
-    function getAmountInEuros($amount)
+<form action="#" method="POST">
+
+    <div>Montant en §: <input type="number" name="amount" id=""> <input type="submit" name="submit"></div>
+
+</form>
+
+
+<?php
+function getAmountInEuros()
 {
-    
-    $amountInEuros = $amount * 161.62;
-    // var_dump($amountInDollars);
-
-    // echo $amountInSimoleons . ' § ';
-    
-    return $amountInEuros;
+    return $_POST ['amount'] * 161.62;
 }
- ?> 
-
-<form action="" method="POST">
-
-        <div>Montant en §: <input type="number" name="amount" id=""> <input type="submit" name="submit" ></div> 
-        <!-- <div>Montant en €: <output type= "number" name="result" id=""></div> -->
-        
-    </form>
-
- <?php
-
-
 
 if (isset($_POST ['amount'])) {
-    $amount = $_POST['amount'];
+    echo getAmountInEuros() . ' €. ';
 }
-// echo $amount . ' §. <br>';
-echo getAmountInEuros($amount). ' €. ';
-
-?> 
 
 
-
-
-<?php include 'footer.php' ?> 
-
+include 'footer.php'
+?>
