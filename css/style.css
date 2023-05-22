@@ -17,14 +17,12 @@
 
 body {
   min-height: 100vh;
-  background-color: #E2cdf1;
+  background-color: #C8A2C8;
   font-size: 16px;
 }
 
 .header {
   padding: 30px 100px 0px 100px;
-  background-color: #E2cdf1;
-  color: black;
   text-align: center;
 }
 
@@ -36,13 +34,8 @@ body {
   transform: translate(-50%, -50%);
   font-size: 15rem;
   font-family: 'Tilt_Neon';
-  color: #E2cdf1;
+  color: #C8A2C8;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  
-
-  /* text-shadow: 0 0 20px #Ff00f8; */
-  /* border: solid 3px black; */
-  
 
 }
 
@@ -83,14 +76,7 @@ body {
   display: block;
 } */
 
-.main-container {
-  max-width: var(--main-width);
-  /* margin: -50px auto 0;
-  background-color: #FFF;
-  padding: 30px 20px; */
-  display: flex;
-  align-items: flex-end;
-}
+
 
 
 .projets {
@@ -106,9 +92,7 @@ section {
 .footer {
   position: sticky;
   top: 100%;
-  background-color: #E2cdf1;
   padding-bottom: 50px;
-  color: black;
   text-align: center;
 }
 
@@ -118,7 +102,45 @@ section {
 
 .monCV {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.theme {
+  padding: 2%
+}
+
+.theme .discoBallButton {
+  width: 50px;
+  height: 50px;
+}
+
+.theme button::before {
+  border-radius: 50%;
+  background-color: #C8A2C8;
+  padding: 0; 
+  border: none; 
+}
+
+.theme-disco {
+  background-color: #261921;
+  color: #Ff00f8;
+  /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
+  text-shadow: 0 0 20px #Ff00f8;
+
+}
+
+.theme button {
+    border-radius: 50%;
+    background-color:black;
+    padding: 0; 
+    border: none; 
+    
+  }
+
+  /* .theme-disco .page_title {
+
+  } */
+  
+
