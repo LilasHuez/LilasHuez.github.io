@@ -218,3 +218,28 @@ section {
 }
 
 
+/* mes projets */
+
+.category-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-menu-item {
+  cursor: pointer;
+  padding: 10px;
+  
+}
+
+.category-menu-item:hover {
+  background-color: #ddd;
+}
+
+.content-container {
+  margin-left: 20px;
+}
+
+.hidden {
+  display: none;
+}
+

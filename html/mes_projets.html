@@ -7,13 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
-
+  
   <link rel="stylesheet" href="../css/reset.css">
 
   <link rel="stylesheet" href="../css/style.css">
+
 </head>
+
 <body>
+  
   <header class="header">
     <div class="header__container">
 
@@ -37,37 +39,55 @@
     </div>
   </header>
 
+  <h3>[EN CONSTRUCTION]</h3>
 
-<body>
-<h1 class="projets">à venir</h1>
+  <div class="category-menu">
+    <div class="category-menu-item">Guide de Bruxelles</div>
+    <div class="category-menu-item">Photos</div>
+    <div class="category-menu-item">Jeu JavaScript</div>
+  </div>
 
-<!-- 
-  <h1 class="projets">Convertisseur de Simflouz en Euros</h1>
-<form action="#" method="POST" onsubmit="convertirEnEuros()">
-
-    <div>Montant en §: <input type="number" name="amount" id="conversion"> <input type="submit" name="submit">
-    <input type="text" id="result" value="">
+  <div class="content-container">
+    <div id="category1-content" class="hidden">
+      <!-- Content for Category 1 -->
+      <h1>Category 1 Content</h1>
+      <p>This is the content for Category 1.</p>
     </div>
+    <div id="category2-content" class="hidden">
+      <!-- Content for Category 2 -->
+      <h1>Category 2 Content</h1>
+      <p>This is the content for Category 2.</p>
+    </div>
+    <div id="category3-content" class="hidden">
+      <!-- Content for Category 3 -->
+      <h1>Category 3 Content</h1>
+      <p>This is the content for Category 3.</p>
+    </div>
+  </div>
 
-</form> -->
-
-<!-- function getAmountInEuros()
-{
-    return $_POST ['amount'] * 161.62;
-}
-
-if (isset($_POST ['amount'])) {
-    echo getAmountInEuros() . ' €. ';
-}
 
 
-include 'footer.php' -->
-
-<footer class="footer">
-    <h3 class="footer__title">
-              Site Vitrine  </h3>
+  <footer class="footer">
+    <div class="theme">
+      <button id="theme-switch" class="btn" type="button" aria-label="Changer le thème">
+      <img src="../img/switchButton.png" class="switchButton">
+      
+        </button>
+    <br>
+    <br>
+    <h3 class="footer_title"> SITE VITRINE  </h3>
+    <br>
+    <div class="languages"> FR | <a href="#"><u>EN</u>                                          </a> </div>
+    </div> 
     
     </footer>
+
+
+
+<script src="../js/theme.js"></script>
+<script src="../js/function.js"></script>
+<script src="../js/app.js"></script>
+
     </body>
     </html>
     
