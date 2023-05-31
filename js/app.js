@@ -2,6 +2,8 @@ const app = {
     init: function() {
        
         theme.init();
+        cursorTheme.init ();
+        
     }
 };
 

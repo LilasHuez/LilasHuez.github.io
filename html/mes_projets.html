@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="../css/reset.css">
 
   <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body>
+<div class="cursor"></div>
   
   <header class="header">
     <div class="header__container">
@@ -34,37 +34,67 @@
         </ul>
       </nav>
 
-      <img src="../img/disco-ball.png" class="disco-ball">
+      <img src="../img/discoBall.gif" class="slideInGifProject">
 
     </div>
   </header>
 
-  <h3>[EN CONSTRUCTION]</h3>
 
-  <div class="category-menu">
-    <div class="category-menu-item">Guide de Bruxelles</div>
-    <div class="category-menu-item">Photos</div>
-    <div class="category-menu-item">Jeu JavaScript</div>
+  <div class="container">
+    <div class="tab-cont">
+        <button class="but" onclick="project(event, 'gameJS')">Jeu JavaScript</button>
+        <button class="but" onclick="project(event, 'Brussels')">Guide de Bruxelles</button>
+        <button class="but" onclick="project(event, 'travelPhotos')">Photos de voyage</button>
+        <button class="but" onclick="project(event, 'converter')">Convertisseur de devise</button>
+        
+    </div>
+    <div class="tab-content" id="gameJS">
+        <h2>Jeu JavaScript</h2>
+        <p>[en construction]</p>
+    </div>
+    <div class="tab-content" id="Brussels">
+        <h2>Guide de Bruxelles</h2>
+        <p>Livret sur la ville de Bruxelles, réalisé pour l'hotel Meininger Bruxelles Gare du Midi [2020]</p>
+        <!-- <object data=
+        "../img/guideBrussels.pdf"
+                        width="100%"
+                        height="100%">
+        </object> -->
+      </div>
+
+    <div class="tab-content" id="travelPhotos">
+        <h2>Photos de voyage</h2>
+        <p>mes photos</p>
+    </div>
+      
+      <div class="tab-content" id="converter">
+        <h2>Convertisseur de devise</h2>
+        <div>
+        <label for="fromCurrency">devise de départ</label>
+        <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            
+        </select>
+    </div>
+    <div>
+        <label for="toCurrency">devise souhaitée</label>
+        <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+           
+        </select>
+    </div>
+    <div>
+        <label for="amount">Montant:</label>
+        <input type="number" id="amount" min="0" step="0.01">
+    </div>
+    <button onclick="convert()">Convertir</button>
+    <div id="result"></div>
+    </div>
   </div>
-
-  <div class="content-container">
-    <div id="category1-content" class="hidden">
-      <!-- Content for Category 1 -->
-      <h1>Category 1 Content</h1>
-      <p>This is the content for Category 1.</p>
-    </div>
-    <div id="category2-content" class="hidden">
-      <!-- Content for Category 2 -->
-      <h1>Category 2 Content</h1>
-      <p>This is the content for Category 2.</p>
-    </div>
-    <div id="category3-content" class="hidden">
-      <!-- Content for Category 3 -->
-      <h1>Category 3 Content</h1>
-      <p>This is the content for Category 3.</p>
-    </div>
-  </div>
-
 
 
   <footer class="footer">
@@ -77,7 +107,7 @@
     <br>
     <h3 class="footer_title"> SITE VITRINE  </h3>
     <br>
-    <div class="languages"> FR | <a href="#"><u>EN</u>                                          </a> </div>
+    <div class="languages"> FR | <a href="../en/my_projects.html"><u>EN</u>                                          </a> </div>
     </div> 
     
     </footer>
@@ -85,8 +115,12 @@
 
 
 <script src="../js/theme.js"></script>
-<script src="../js/function.js"></script>
+<script src="../js/cursorTheme.js"></script>
 <script src="../js/app.js"></script>
+
+<script src="../js/hideShow.js"></script>
+<script src ="../js/convertisseur.js"></script>
+
 
     </body>
     </html>
