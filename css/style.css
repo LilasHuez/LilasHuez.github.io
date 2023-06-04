@@ -257,6 +257,7 @@ section {
 /* mes projets my projects */
 
 .container {
+  background-color: rgba(228, 215, 245, 0.4); /* Change the color code and add the desired opacity */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -270,6 +271,7 @@ section {
 }
 
 .theme-disco .container {
+  background-color: transparent;
   border-color: #FF00F8;
   
 }
@@ -307,7 +309,7 @@ section {
 .tab-content{
   
   height: 100%;
-  float: left;
+  float:left;
   padding: 20px;
   width: 70%;
   animation: anime 1s 
@@ -338,15 +340,234 @@ section {
   to{opacity: 1}
 }
 
+
+
 /* CV zoom in */
 
 
 .monCV {
   display: block;
   margin: 0 auto;
-  
-  /* width: 646px;
-  height: 837px; */
-
 }
 
+
+/* carousel */
+
+.guide {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+
+.guide-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.guide-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  /* width: 250px;
+  height: 450px; */
+  margin-right: 20px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pre-btn,
+.nxt-btn {
+
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, transparent 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  width: 60px;
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+
+/* TO DO LIST */
+
+.toDoContainer {
+  width: 360px;
+}
+
+#inputField {
+  width: 300px;
+  height: 46px;
+  border-width: 0;
+  border: 1px solid black;
+  outline: none;
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+#addToDo {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  vertical-align: middle;
+  font-size: 30px;
+}
+
+.paragraph-styling {
+  margin: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.tasks {
+  margin-top: 25px;
+}
+
+/* game */
+.label {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+#userCode {
+  padding: 1rem;
+  font-family: monospace;
+  background-color: black;
+  color: #C2ADE5;
+  font-size: 1rem;
+  width: 100%;
+  height: 4rem;
+}
+
+#launchScript {
+  background-color: #C2ADE5;
+  border: 0;
+  margin: 0.625rem 0;
+  padding: 0.625rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+#board {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.cellRow {
+  display: flex;
+}
+
+.cell {
+  background-color: lightgrey;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 1px;
+}
+
+.cellStart {
+  background-color: white;
+}
+
+.cellEnd {
+  background-color:#C2ADE5;
+}
+
+.cellCurrent::after {
+  content: '>';
+  color: #C2ADE5;
+}
+
+.cellCurrent-top {
+  transform: rotate(-90deg);
+}
+
+.cellCurrent-bottom {
+  transform: rotate(90deg);
+}
+
+.cellCurrent-left {
+  transform: rotate(180deg);
+}
+
+.cellCurrent-right {
+  transform: rotate(0deg);
+}

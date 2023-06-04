@@ -43,9 +43,8 @@
   <div class="container">
     <div class="tab-cont">
         <button class="but" onclick="project(event, 'gameJS')">Jeu JavaScript</button>
-        <button class="but" onclick="project(event, 'todo')">Todolist</button>
+        <button class="but" onclick="project(event, 'todo')">To Do List</button>
         <button class="but" onclick="project(event, 'Brussels')">Guide de Bruxelles</button>
-        <button class="but" onclick="project(event, 'travelPhotos')">Photos de voyage</button>
         <button class="but" onclick="project(event, 'converter')">Convertisseur de devise</button>
       
         
@@ -53,43 +52,196 @@
     <div class="tab-content" id="gameJS">
         <h2>Jeu JavaScript</h2>
         <p>[en construction]</p>
+        <div>
+          <div class="label">Votre code</div>
+          <textarea id="userCode"></textarea>
+          <button id="launchScript">Lancer le script</button>
+      </div>
+        <div id="board">
+        </div>
     </div>
     <div class="tab-content" id="todo">
-      <h2>Todolist</h2>
-      <p>[en construction]</p>
+      <h2>To do list</h2>
+      <p>Un click pour barrer la tâche, double click pour l'effacer</p>
+      
+    <div class="toDocontainer">
+        <input id="inputField" type="text"><button id="addToDo">+</button>
+        <div class="tasks" id="taskContainer">
+        </div>
+
   </div>
+    </div>
     <div class="tab-content" id="Brussels">
         <h2>Guide de Bruxelles</h2>
-        <p>Livret sur la ville de Bruxelles, réalisé pour l'hotel Meininger Bruxelles Gare du Midi [2020]</p>
-        <!-- <object data=
-        "../img/guideBrussels.pdf"
-                        width="100%"
-                        height="100%">
-        </object> -->
-      </div>
-
-    <div class="tab-content" id="travelPhotos">
-        <h2>Photos de voyage</h2>
-        <p>mes photos</p>
+        
+        <p>Livret sur la ville de Bruxelles, que j'ai réalisé pour l'hotel Meininger Bruxelles Gare du Midi [2020]</p>
+        
+        <section class="guide"> 
+          
+          <button class="pre-btn"><img src="../img/left.png" alt=""></button>
+          <button class="nxt-btn"><img src="../img/right.png" alt=""></button>
+            <div class="guide-container">
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="../img/guide/1.png" class="product-thumb" alt="">
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="../img/guide/2.png" class="product-thumb" alt="">
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="../img/guide/3.png" class="product-thumb" alt="">
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="../img/guide/4.png" class="product-thumb" alt="">
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="../img/guide/5.png" class="product-thumb" alt="">
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="../img/guide/6.png" class="product-thumb" alt="">
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="../img/guide/7.png" class="product-thumb" alt="">
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="../img/guide/8.png" class="product-thumb" alt="">
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="../img/guide/9.png" class="product-thumb" alt="">
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="../img/guide/10.png" class="product-thumb" alt="">
+                  </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/11.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/12.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/13.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/14.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/15.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/16.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/17.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/18.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/19.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/20.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/21.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/22.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/23.png" class="product-thumb" alt="">
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/guide/24.png" class="product-thumb" alt="">
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- <button><a href ="../img/guideBrussels.pdf" download="guideBrussels"></a></button> -->
+        
+        
     </div>
-      
+   
       <div class="tab-content" id="converter">
-        <h2>Convertisseur de devise</h2>
+        <h2>Un convertisseur de devise... un peu particulier</h2>
+        <p>Le convertisseur de devise fut l'un des premiers exercices à réaliser en PHP lors de ma formation en développement web. Ici, j’ai décidé de le créer en JavaScript, mais sans utiliser d’API. C’est alors avec une monnaie fictive que je me lance: le Simflouz (§)! 
+          Après une enquête acharnée et pleine d’embûches, j’ai trouvé un taux de change à peu près fiable (si l’on ignore certains paradoxes qui ne reflètent pas toujours les prix de notre vie à nous, comme par exemple une pizza à 40§ contre une belle voiture à 4 000§). 
+        </p>
+        <br>
         <div>
         <label for="fromCurrency">devise de départ</label>
         <select id="fromCurrency">
-            <option value="USD">USD</option>
+            
             <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
+            <option value="SML">SML</option>
             
         </select>
     </div>
     <div>
         <label for="toCurrency">devise souhaitée</label>
         <select id="toCurrency">
-            <option value="USD">USD</option>
+            
             <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
+            <option value="SML">SML</option>
            
         </select>
     </div>
@@ -122,12 +274,16 @@
 
 
 
+<script src="../js/app.js"></script>
+<script src="../js/game.js"></script>
+<script src="../js/carousel.js"></script>
+<script src="../js/toDoList.js"></script>
 <script src="../js/theme.js"></script>
 <script src="../js/cursorTheme.js"></script>
-<script src="../js/app.js"></script>
 
 <script src="../js/hideShow.js"></script>
-<script src ="../js/convertisseur.js"></script>
+<script src="../js/converter.js"></script>
+
 
 
     </body>
