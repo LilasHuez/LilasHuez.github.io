@@ -51,14 +51,21 @@
     </div>
     <div class="tab-content" id="gameJS">
         <h2>Jeu JavaScript</h2>
-        <p>[en construction]</p>
         <div>
           <div class="label">Votre code</div>
+          <div class="game-text">
+            <span class="commands">commandes: </span>
+            <span class="forward">f; pour avancer</span>
+            <span class="right">r; pour tourner à droite</span>
+            <span class="left">l; pour tourner à gauche</span>
+          </div>
+          <br>
           <textarea id="userCode"></textarea>
           <button id="launchScript">Lancer le script</button>
       </div>
         <div id="board">
         </div>
+        
     </div>
     <div class="tab-content" id="todo">
       <h2>To do list</h2>
@@ -68,6 +75,7 @@
         <input id="inputField" type="text"><button id="addToDo">+</button>
         <div class="tasks" id="taskContainer">
         </div>
+        <img src="../img/construction.gif" class="construction">
 
   </div>
     </div>
@@ -224,7 +232,7 @@
       <div class="tab-content" id="converter">
         <h2>Un convertisseur de devise... un peu particulier</h2>
         <p>Le convertisseur de devise fut l'un des premiers exercices à réaliser en PHP lors de ma formation en développement web. Ici, j’ai décidé de le créer en JavaScript, mais sans utiliser d’API. C’est alors avec une monnaie fictive que je me lance: le Simflouz (§)! 
-          Après une enquête acharnée et pleine d’embûches, j’ai trouvé un taux de change à peu près fiable (si l’on ignore certains paradoxes qui ne reflètent pas toujours les prix de notre vie à nous, comme par exemple une pizza à 40§ contre une belle voiture à 4 000§). 
+          Après une enquête acharnée et pleine d’embûches, j’ai trouvé un taux de change à peu près fiable (si l’on ignore certains paradoxes qui ne reflètent pas toujours les prix de notre vie à nous, comme par exemple une pizza à 40§ contre une belle voiture neuve à 4 000§). 
         </p>
         <br>
         <div>
@@ -251,15 +259,16 @@
     </div>
     <button onclick="convert()">Convertir</button>
     <div id="result"></div>
+    <img src="../img/sims.png" class="sims">
     </div>
+    
 
     
   </div>
-
-
+ 
   <footer class="footer">
     <div class="theme">
-      <button id="theme-switch" class="btn" type="button" aria-label="Changer le thème">
+        <button id="theme-switch" class="btn" type="button" aria-label="Changer le thème">
       <img src="../img/switchButton.png" class="switchButton">
       
         </button>

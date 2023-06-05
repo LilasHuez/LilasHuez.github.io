@@ -44,16 +44,22 @@
     <div class="tab-cont">
         <button class="but" onclick="project(event, 'gameJS')">JavaScript Game</button>
         <button class="but" onclick="project(event, 'todo')">To Do List</button>
-        <button class="but" onclick="project(event, 'Brussels')">Brussel' guide</button>
+        <button class="but" onclick="project(event, 'Brussels')">Brussels' guide</button>
         <button class="but" onclick="project(event, 'converter')">Currency converter</button>
       
         
     </div>
     <div class="tab-content" id="gameJS">
         <h2>JavaScript Game</h2>
-        <p>[under construction]</p>
         <div>
           <div class="label">Your code</div>
+          <div class="game-text">
+            <span class="commands">commands: </span>
+            <span class="forward">f; go forward</span>
+            <span class="right">r; turn right</span>
+            <span class="left">l; turn left</span>
+          </div>
+          <br>
           <textarea id="userCode"></textarea>
           <button id="launchScript">Launch Script</button>
       </div>
@@ -68,7 +74,7 @@
         <input id="inputField" type="text"><button id="addToDo">+</button>
         <div class="tasks" id="taskContainer">
         </div>
-
+        <img src="../img/construction.gif" class="construction">
   </div>
     </div>
     <div class="tab-content" id="Brussels">
@@ -251,6 +257,7 @@
     </div>
     <button onclick="convert()">Convert</button>
     <div id="result"></div>
+    <img src="../img/sims.png" class="sims">
     </div>
 
     

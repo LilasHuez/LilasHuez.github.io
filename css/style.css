@@ -44,7 +44,7 @@ body {
   font-size: 10rem;
   font-family: 'Tilt_Neon';
   color: #C2ADE5;
-  text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 
 }
 
@@ -257,11 +257,10 @@ section {
 /* mes projets my projects */
 
 .container {
-  background-color: rgba(228, 215, 245, 0.4); /* Change the color code and add the desired opacity */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: rgba(228, 215, 245, 0.65); /* Change the color code and add the desired opacity */
+  position:absolute;
+  top: 20%;
+  display: block;
   width: 100%;
   margin: auto;
   overflow:hidden;
@@ -281,7 +280,7 @@ section {
   width: 15%;
   background-color: transparent;
   height: 100%;
-  border-right: 1px solid #E4D7F5;
+  border-right: 1px solid white;
 }
 
 
@@ -298,7 +297,12 @@ section {
 }
 
 .theme-disco .tab-cont button{
+  border-color:#FF00F8;
   color: #FF00F8;
+}
+
+.theme-disco .tab-cont{
+  border-color:#FF00F8;
 }
 
 .theme-disco .tab-cont button:hover{
@@ -460,6 +464,11 @@ section {
   margin-bottom: 10px;
 }
 
+/* converter */
+.sims{
+  float: right;
+  height: 50%;
+}
 
 /* TO DO LIST */
 
@@ -511,6 +520,10 @@ section {
   height: 4rem;
 }
 
+.theme-disco #userCode {
+  border-color: #FF00F8;
+}
+
 #launchScript {
   background-color: #C2ADE5;
   border: 0;
@@ -526,6 +539,7 @@ section {
   background-color: black;
   border: 1px solid black;
 }
+
 
 .cellRow {
   display: flex;
@@ -570,4 +584,30 @@ section {
 
 .cellCurrent-right {
   transform: rotate(0deg);
+}
+
+.commands {
+  color: black;
+  background-color: white;
+}
+
+.forward {
+  background-color:#C2ADE5;
+}
+
+.right {
+  background-color: white;
+}
+
+.left {
+  background-color:#C2ADE5;
+}
+
+.theme-disco .game-text {
+  color: black;
+}
+
+.construction{
+  float: right;
+  height: 50%;
 }

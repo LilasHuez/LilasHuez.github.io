@@ -9,6 +9,7 @@ function convert() {
     resultElement.textContent = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
   }
   
+  
 
   function getExchangeRate(fromCurrency, toCurrency) {
 
