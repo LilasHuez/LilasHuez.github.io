@@ -573,11 +573,17 @@ section {
 }
 
 .cellEnd {
-  background-color:#C2ADE5;
+  background-color: #C2ADE5;
+  content: url('../img/castle.png');
+}
+
+.theme-disco .cellEnd {
+  background-color: #C2ADE5;
+  content: url('../img/house.gif');
 }
 
 .cellCurrent::after {
-  content: '>';
+  content: '→';
   color: #C2ADE5;
 }
 

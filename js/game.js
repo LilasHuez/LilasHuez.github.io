@@ -97,9 +97,9 @@ var game = {
   checkSuccess: function() {
     // if coordinates are ok
     if (game.current.row == game.end.row && game.current.col == game.end.col) {
-      alert('You WIINNN !!! congratulations !');
+      alert('You win! Well done!');
     } else {
-      alert('You dramatically failed !');
+      alert('You failed ! Try again !');
     }
   },
   drawBoard: function() {
