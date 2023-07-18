@@ -10,7 +10,7 @@ var game = {
     col: 6
   },
   current: null,
-  direction: 'right', // top, right, bottom, left
+  direction: 'right', // (changement possible) top, right, bottom, left
   delay: 500,
   init: function() {
     console.log('init');
@@ -41,10 +41,10 @@ var game = {
   handleLaunchScriptButton: function() {
     game.initGame();
 
-    // Strating displaying the board
+  
     game.drawBoard();
 
-    // get code
+   
     var codeLines = document.getElementById('userCode').value.split("\n");
 
     window.setTimeout(function() {
@@ -58,12 +58,12 @@ var game = {
     if (continueReading) {
       game.drawBoard();
 
-      // Increment
+      
       index++;
 
-      // if still a line to interpret
+      
       if (index < codeLines.length) {
-        // Recall same method
+        
         window.setTimeout(function() {
           game.codeLineLoop(codeLines, index);
         }, game.delay);
@@ -95,7 +95,7 @@ var game = {
     return true;
   },
   checkSuccess: function() {
-    // if coordinates are ok
+    
     if (game.current.row == game.end.row && game.current.col == game.end.col) {
       alert('You win! Well done!');
     } else {
@@ -118,19 +118,19 @@ var game = {
         currentCell.classList.add('cell');
         currentCell.classList.add('cell' + j);
 
-        // if start
+        
         if (i == game.start.row && j == game.start.col) {
           currentCell.classList.add('cellStart');
         }
-        // if end
+        
         if (i == game.end.row && j == game.end.col) {
           currentCell.classList.add('cellEnd');
         }
-        // if current
+        
         if (i == game.current.row && j == game.current.col) {
-          // current
+          
           currentCell.classList.add('cellCurrent');
-          // direction
+          
           currentCell.classList.add('cellCurrent-' + game.direction);
         }
 
@@ -158,7 +158,7 @@ var game = {
         console.log('direction unknown : ' + game.direction);
     }
 
-    // if out of bounds => return false
+    
     if (game.current.row < 1) {
       game.current.row = 1;
       console.log('out 1');
