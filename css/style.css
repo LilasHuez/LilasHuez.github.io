@@ -17,12 +17,6 @@ body#home {
   font-size: 16px;
 }
 
-body#home.theme-disco {
-  background-color: #261921 !important;
-  color: #FF00F8;
-  text-shadow: 0 0 50px #FF00F8;
-}
-
 
 body {
   min-height: 100vh;
