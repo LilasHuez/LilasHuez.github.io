@@ -10,14 +10,14 @@
   font-style: normal;
 }
 
-body.index {
+body.home {
   background-image: url("../img/background.jpg");
   background-size: cover;
   min-height: 100vh;
   font-size: 16px;
 }
 
-body.other {
+body {
   background-size: cover;
   min-height: 100vh;
   background-color: #C2ADE5;
