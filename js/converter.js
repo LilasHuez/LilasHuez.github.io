@@ -15,10 +15,10 @@ function convert() {
 
     const exchangeRates = {
         EUR: {
-          SML: 0.30
+          SML: 3.26
         },
         SML: {
-          EUR: 3.26
+          EUR: 0.30
         }
       };
   
