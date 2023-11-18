@@ -22,8 +22,7 @@ body {
 .header {
   padding: 30px 100px 0px 100px;
   text-align: center;
-  margin-bottom: 77px;
-  margin-top: 20px;
+  margin-bottom: 97px;
 }
 
 .headerCV {
@@ -73,6 +72,7 @@ body {
   flex-direction: row; 
   --main-width: 700px; 
   --highlight--color: #FF00F8;
+  margin-top: 20px;
 }
 
 
