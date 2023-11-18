@@ -76,7 +76,7 @@ body {
   font-size: 10rem;
   font-family: 'Tilt_Neon';
   color: #C6A6CF;
-  text-shadow: -1px -1px 0 #F8F2FA, 1px -1px 0 #F8F2FA, -1px 1px 0 #F8F2FA, 1px 1px 0 #F8F2FA;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 
 }
 
