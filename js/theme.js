@@ -1,12 +1,16 @@
 const theme = {
   init: function() {
-    // console.log('initialisation du module theme');
     document.querySelector('#theme-switch').addEventListener('click', function() {
-      const bodyElem = document.querySelector('body');
+      const regularBodyElem = document.querySelector('body');
       const bodyHomeElem = document.querySelector('body#home');
-      bodyElem.classList.toggle('theme-disco');
-      bodyHomeElem.classList.toggle('theme-disco');
-    
+
+      // Toggle class on the regular body element
+      regularBodyElem.classList.toggle('theme-disco');
+
+      // Toggle class on the body element with the ID 'home' if it exists
+      if (bodyHomeElem) {
+        bodyHomeElem.classList.toggle('theme-disco');
+      }
     });
   }
 }
