@@ -10,7 +10,7 @@
   font-style: normal;
 }
 
-body.home {
+body#home {
   background-image: url("../img/background.jpg");
   background-size: cover;
   min-height: 100vh;
