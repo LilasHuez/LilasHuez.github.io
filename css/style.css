@@ -12,12 +12,14 @@
 
 body {
   background-image: url("../img/background.jpg");
-  background-size: contain; 
-  /* background-repeat: no-repeat;  */
-  background-position: center center; 
-  min-height: 100vh;
+  background-size: cover; 
+  /* background-repeat: no-repeat; 
+  background-position: center center;  */
+  /* min-height: 100vh; */
+  background-color: #C6A6CF;
   font-size: 16px;
 }
+
 
 .header {
   padding: 30px 100px 0px 100px;
