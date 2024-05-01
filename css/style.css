@@ -18,27 +18,19 @@
 }
 
 body {
-  height: 5000px;
-
   background-image: url("../img/background.jpg");
   background-size: cover; 
   background-repeat: no-repeat;
   background-attachment: fixed; /* Add this line */
   background-color: #C6A6CF;
-  font-size: 16px;
-
 }
 
 .container {
-  width: 100%;
   max-width: 1600px;
   margin: 0 auto;
   padding-left: 128px;
   padding-right: 128px;
-  
-  justify-content: center;
-    
-}
+  }
 
 
 header {
@@ -55,12 +47,12 @@ header {
 
   max-width: 1600px;
   margin: 0 auto;
-  padding-left: 128px;
-  padding-right: 128px;
+  padding-left: 80px;
+  padding-right: 80px;
   }
 
   h3 {
-    padding-right: 50px;
+    font-size: 25px;
 
   span {
     color: white
@@ -68,47 +60,37 @@ header {
 }
   
 nav {
-  margin-top: 5px; /* Add some space above the nav */
-}
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, auto);
 
-.menu-flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu-flex a {
-  text-decoration: none;
-  color: black; /* Set text color to white */
-  font-weight: bold;
-  margin-right: 20px;
-  
-}
-
-.menu-flex a:last-child {
-  margin-right: 0; /* Remove margin from the last navigation link */
-}
-
-/* Media query for small screens */
-@media screen and (max-width: 768px) {
-  .container {
-    padding-left: 40px; /* Adjust left padding for smaller screens */
-    padding-right: 20px; /* Adjust right padding for smaller screens */
-  } }
-
-/* Media query for small screens */
-@media screen and (max-width: 480px) {
-  .menu-flex {
-    flex-direction: column; /* Change flex-direction to column for small screens */
-    align-items: start; /* Center the items vertically */
+  a {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
   }
-
-  .menu-flex a {
-    margin-bottom: 10px; /* Add margin between the navigation links */
-
-  }
-  
-  
 }
+
+/* For screens smaller than a certain size (e.g., 600px), make the navigation vertical */
+@media screen and (max-width: 600px) {
+  nav {
+    grid-template-columns: auto; /* Change to a single column layout */
+    gap: 5px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+  /* For screens smaller than a certain size (e.g., 600px), adjust font sizes */
+  @media screen and (max-width: 600px) {
+    h3 {
+      font-size: 20px; /* Adjust the font size of h3 */
+    }
+
+    nav a {
+      font-size: 20px; /* Adjust the font size of navigation links */
+    }
+  }
 
 
 }
@@ -117,32 +99,47 @@ nav {
 main {
 
   section.home {
-    
-    .welcome {
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    min-height: 100vh;
-    font-size: 180px;
-    font-family: 'Tilt_Neon';
+    justify-content: center;
+  }
+
+    span {
+    font-size: 150px;
     color: #C6A6CF;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
     }
 
+    p {
+      font-family: 'Montserrat';
+    } 
 
+    section.myprojects {
 
-  }
-
-  .container {
-    position: relative;
-    z-index: 1;
-    padding-top: 32px;
-    padding-bottom: 32px;
+      min-height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
-  }
+    section.myCV {
+      min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
+
+.CV {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+
+
+}
 
 
 footer {
@@ -158,3 +155,7 @@ footer {
     height: auto;
   }
 }
+
+/* font-family: 'Tilt_Neon';
+    color: #C6A6CF;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; */

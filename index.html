@@ -1,66 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chez Lilas</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  
 </head>
 
-<body>
-<div class="cursor"></div>
+  <body>
+    <header>
+      <div class="container">
+        <h3>LILAS<span>HUEZ</span></h3>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">MY PROJECTS</a>
+            <a href="#">MY CV</a>
+        </nav>
+      </div>
+    </header>
 
-  <header class="header">
-    <div class="header__container">
+    <main>
 
-      <nav class="header__menu">
-        <ul class="header__menu-container">
-          <li class="header__menu-item">
-            <a href="index.html">ACCUEIL</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="mes_projets.html">MES PROJETS</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="monCV.html">MON CV</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      <section class="home">
+        <div class="container">
+          
+          <span><div>WELCOME</div></span>
 
-  <img src="./img/discoBall.gif" class="slideInGif">
+          </div>
+      </section>
 
+      <section class="intro">
+        <div class="container">
+          
+          <div><p>My introduction Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Natus placeat totam consectetur saepe modi esse sit sunt quo. Laudantium sequi fugit autem veniam odit magni nobis. 
+            Ipsa laborum facilis rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque enim non earum consequuntur, laudantium eligendi, 
+            iure culpa dolor dolores qui ad dicta deserunt quo corporis omnis aspernatur similique fugit! Culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Provident mollitia velit nobis itaque expedita dolorem, reprehenderit reiciendis consectetur sequi at pariatur non minima maxime modi dolores! Minus sit sed id!</p></div>
+          
 
-  <h1 class="page_title">BIENVENUE</h1>
-
+          </div>
+      </section>
 
 
+        <section id="myprojects" class="myprojects">
+    <div class="container">
+      <div class="project"><span>MY PROJECTS</span></div></div>    
+  </section>
 
-  <footer class="footer">
-    <div class="theme">
-      <button id="theme-switch" class="btn" type="button" aria-label="Changer le thème">
-      <img src="./img/switchButton.png" class="switchButton">
-      
-        </button>
-    <br>
-    <br>
-    <h3 class="footer_title"> PORTFOLIO  </h3>
-    <br>
-    <div class="languages"> FR | <a href="./en/index.html"><u>EN</u>                                          </a> </div>
-    </div> 
+      <section  id="myCV" class="myCV">
+        <div class="container">
+          <div class="cv"><span>MY CV</span></div>
+        </div>
+        <!-- <div class="button"> <img src="./img/CV Lilas Huez.png" alt="switch"> </div> -->
+      </section>
+
+    </main> 
     
+    
+
+    <footer>
+      <div class="button"> <img src="./img/switchButton.png" alt="switch"> </div>
     </footer>
-
-<script src="js/theme.js"></script>
-<script src="js/cursorTheme.js"></script>
-<script src="js/app.js"></script>
-
-    </body>
-    </html>
-    
+</body>
+</html>
