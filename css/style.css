@@ -28,8 +28,8 @@ body {
 .container {
   max-width: 1600px;
   margin: 0 auto;
-  padding-left: 128px;
-  padding-right: 128px;
+  align-items: center;
+  justify-content: center;
   }
 
 
@@ -76,8 +76,6 @@ nav {
   nav {
     grid-template-columns: auto; /* Change to a single column layout */
     gap: 5px;
-    display: flex;
-    justify-content: flex-start;
   }
 }
 
@@ -113,6 +111,10 @@ main {
 
     p {
       font-family: 'Montserrat';
+      margin-left: 60px;
+      margin-right: 60px;
+      text-align: justify;
+      
     } 
 
     section.myprojects {
@@ -137,7 +139,30 @@ main {
   justify-content: center;
 }
 
+/* Adjustments for smaller screens */
+@media screen and (max-width: 1200px) {
+  span {
+    font-size: 120px;
+  }
+}
 
+@media screen and (max-width: 992px) {
+  span {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  span {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  span {
+    font-size: 60px;
+  }
+}
 
 }
 
