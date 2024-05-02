@@ -25,6 +25,13 @@ body {
   background-color: #C6A6CF;
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  body {
+    background-position: center; /* Center the background image */
+  }
+}
+
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -32,6 +39,7 @@ body {
 
 
 header {
+  
   position: fixed;
   top: 0;
   left: 0;
@@ -55,6 +63,7 @@ header {
   span {
     color: white
   }
+
 }
   
 nav {
@@ -72,8 +81,8 @@ nav {
 /* For screens smaller than a certain size (e.g., 600px), make the navigation vertical */
 @media screen and (max-width: 600px) {
   .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   nav {
@@ -93,6 +102,11 @@ nav {
     }
   }
 
+  .slideInGif {
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+    }
 
 }
 
@@ -114,15 +128,15 @@ main {
 
     p {
       font-family: 'Montserrat';
-      margin-left: 60px;
-      margin-right: 60px;
+      margin-left: 80px;
+      margin-right: 80px;
       text-align: justify;
       
     } 
 
     section.myprojects {
 
-      min-height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,7 +153,7 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
 
     .CV img {
@@ -166,8 +180,8 @@ main {
 
 @media screen and (max-width: 768px) {
   p {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
   
   span {
@@ -177,8 +191,8 @@ main {
 
 @media screen and (max-width: 480px) {
   p {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   span {
     font-size: 60px;
@@ -197,8 +211,16 @@ footer {
   text-align: center;
 
   .button img {
-    width: 40px;
+    width: 50px;
     height: auto;
+  
+  
+  }
+
+  @media screen and (max-width: 480px) {
+    .button img {
+      width: 40px;
+    }
   }
 }
 
