@@ -33,7 +33,7 @@ body.theme-disco nav a {
 }
 
 body.theme-disco span {
-  text-shadow: 0 0 50px #FF00F8;  
+  text-shadow: 0 0 50px #FF00F8 ;  
 }
 
 
@@ -133,6 +133,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+  
   }
 
     span {
@@ -149,6 +150,18 @@ main {
       text-align: justify;
       
     } 
+   .Illustration {
+    margin-top: 60px;
+   }
+
+    .Illustration img {
+      
+      max-width: 100%; /* Ensure the image doesn't exceed its container */
+      height: auto; /* Maintain aspect ratio */
+      /* padding-left: 10px;
+      padding-right: 10px; */
+    }
+    
 
     section.myprojects {
 
@@ -163,7 +176,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+  
     }
+
+    /* section.CV {
+    } */
 
     .CV {
       display: flex;
@@ -178,8 +195,7 @@ main {
       /* padding-left: 10px;
       padding-right: 10px; */
     }
-  
-    
+
 
 /* Adjustments for smaller screens */
 @media screen and (max-width: 1200px) {
