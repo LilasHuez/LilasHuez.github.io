@@ -171,6 +171,26 @@ main {
     justify-content: center;
     }
 
+    .logos-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      padding: 20px 0;
+    }
+    
+    .logos-container .logo {
+      flex: 1;
+      margin: 0 20px;
+    }
+    
+    .logos-container .logo img {
+      max-width: 100%;
+      height: auto;
+      max-height: 200px; /* Adjust based on your logo sizes */
+    }
+    
+
     section.myCV {
     min-height: 100vh;
     display: flex;
@@ -291,7 +311,7 @@ footer {
 	width: 300px;
 	height: 300px;
 	top: 0;
-	left: 0;
+	left: -10px;
 	animation: slideInAnimation 1s forwards
   }
 
